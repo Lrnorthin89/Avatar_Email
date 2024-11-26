@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Email Signature with Logos</title>
+  <title>Email Signature with Top-Right Icon</title>
   <style>
     /* Page Background */
     body {
@@ -20,7 +20,7 @@
     /* Signature Container */
     .signature {
       width: 700px;
-      height: 250px; /* Increased height for logos */
+      height: 250px;
       background: #ffffff;
       border-radius: 10px;
       display: flex;
@@ -29,11 +29,21 @@
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     }
 
+    /* Top-Right Icon */
+    .top-right-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 100px;
+      height: 100px;
+      z-index: 10;
+    }
+
     /* Left Section with Profile and Design */
     .left-section {
       width: 30%;
       background: #1b2735;
-      color: #ffffff;
+      color: #575656;
       position: relative;
       display: flex;
       justify-content: center;
@@ -46,7 +56,7 @@
       width: 100px;
       height: 100px;
       border-radius: 50%;
-      border: 3px solid #de6a2e;
+      border: 0px solid #de6a2e;
       margin-bottom: 10px;
     }
     
@@ -62,12 +72,12 @@
     .name {
       font-size: 20px;
       font-weight: bold;
-      color: #de6a2e;
+      color: #575656;
     }
 
     .title {
       font-size: 16px;
-      color: #575656;
+      color: #de6a2e;
       margin-bottom: 10px;
     }
 
@@ -90,7 +100,7 @@
     /* Logo Replacement Section */
     .company-logo {
       position: absolute;
-      bottom: 20px; /* Adjusted for logo space */
+      bottom: 20px;
       left: 20px;
       max-width: 150px;
     }
@@ -106,13 +116,16 @@
     }
 
     .logos img {
-      max-height: 50px; /* Adjusted for consistent logo size */
+      max-height: 50px; /* Consistent logo size */
       height: auto;
     }
   </style>
 </head>
 <body>
   <div class="signature">
+    <!-- Top-Right Icon -->
+    <img src="Avatar_WebGraphics_CirclePurple.jpg" alt="Top-Right Icon" class="top-right-icon">
+    
     <!-- Left Section -->
     <div class="left-section">
       <div class="circle"></div>
@@ -128,19 +141,31 @@
         <div><a href="mailto:l.northington@avatarmsp.com">l.northington@avatarmsp.com</a></div>
         <div><a href="https://AvatarManagedServices.com" target="_blank">AvatarManagedServices.com</a></div>
         <div>
-            <a href="https://www.google.com/maps/place/7102+North+Sam+Houston+Pkwy+W+s210,+Houston,+TX+77064/@29.937181,-95.5291855,17z/data=!3m1!4b1!4m5!3m4!1s0x8640ce656de42b29:0x55e52c7668da90d0!8m2!3d29.937181!4d-95.5291855?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" target="_blank">
-              7102 N. Sam Houston Pkwy W. S210, Houston, TX 77064
-            </a>
-          </div>
+          <a href="https://www.google.com/maps/place/7102+North+Sam+Houston+Pkwy+W+s210,+Houston,+TX+77064/@29.937181,-95.5291855,17z/data=!3m1!4b1!4m5!3m4!1s0x8640ce656de42b29:0x55e52c7668da90d0!8m2!3d29.937181!4d-95.5291855?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D" target="_blank">
+            7102 N. Sam Houston Pkwy W. S210, Houston, TX 77064
+          </a>
+        </div>
       </div>
       <!-- Replaced Company Name with Logo -->
       <img src="Avatar.png" alt="Avatar Logo" class="company-logo">
 
       <!-- Logos Section -->
       <div class="logos">
-        <img src="Inc5000.jpg" alt="Inc 5000 Logo">
-        <img src="MSP 500.jpg" alt="MSP 500 Logo">
-        <img src="CRN 150.jpg" alt="CRN 150 Logo">
+        <a href="https://www.linkedin.com/company/avatar-managed-services" target="_blank">
+          <img src="linkedin-icon.png" alt="LinkedIn Icon">
+        </a>
+        <a href="https://www.facebook.com/p/Avatar-Managed-Services-100063589388444/" target="_blank">
+          <img src="facebook-icon.png" alt="Facebook Icon">
+        </a>
+        <a href="https://www.inc.com/profile/maranatha-technologies" target="_blank">
+          <img src="Inc5000.jpg" alt="Inc 5000 Logo">
+        </a>
+        <a href="https://www.crn.com/rankings-and-lists/msp2024-details?c=183" target="_blank">
+          <img src="MSP 500.jpg" alt="MSP 500 Logo">
+        </a>
+        <a href="https://www.crn.com/rankings-and-lists/fast-growth-2024-details?c=63" target="_blank">
+          <img src="CRN 150.jpg" alt="CRN 150 Logo">
+        </a>
       </div>
     </div>
   </div>
