@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Signature with Logos</title>
+  <style>
+    /* Page Background */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f5f5f5, #ffffff);
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Signature Container */
+    .signature {
+      width: 700px;
+      height: 250px; /* Increased height for logos */
+      background: #ffffff;
+      border-radius: 10px;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Left Section with Profile and Design */
+    .left-section {
+      width: 30%;
+      background: #1b2735;
+      color: #ffffff;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    /* Profile Image */
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #de6a2e;
+      margin-bottom: 10px;
+    }
+    
+    /* Right Section with Details */
+    .right-section {
+      width: 70%;
+      padding: 20px;
+      position: relative;
+      background: linear-gradient(135deg, #f9f9f9, #ffffff);
+    }
+
+    /* Name and Title */
+    .name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #de6a2e;
+    }
+
+    .title {
+      font-size: 16px;
+      color: #575656;
+      margin-bottom: 10px;
+    }
+
+    /* Contact Details */
+    .contact-info {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #575656;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      color: #de6a2e;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Logo Replacement Section */
+    .company-logo {
+      position: absolute;
+      bottom: 20px; /* Adjusted for logo space */
+      left: 20px;
+      max-width: 150px;
+    }
+
+    /* Logos Section */
+    .logos {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logos img {
+      max-height: 50px; /* Adjusted for consistent logo size */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="signature">
+    <!-- Left Section -->
+    <div class="left-section">
+      <div class="circle"></div>
+      <img src="img/profile.jpg" alt="Profile Image" class="profile-img">
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <div class="name">Leon Northington</div>
+      <div class="title">IT Support Specialist</div>
+      <div class="contact-info">
+        <div>O. <a href="tel:9795884753">979-588-4753</a> | C. <a href="tel:8326565303">832-656-5303</a></div>
+        <div><a href="mailto:l.northington@avatarmsp.com">l.northington@avatarmsp.com</a></div>
+        <div><a href="https://AvatarManagedServices.com" target="_blank">AvatarManagedServices.com</a></div>
+        <div>7102 N. Sam Houston Pkwy W. S210, Houston, TX 77064</div>
+      </div>
+      <!-- Replaced Company Name with Logo -->
+      <img src="img/Avatar.png" alt="Avatar Logo" class="company-logo">
+
+      <!-- Logos Section -->
+      <div class="logos">
+        <img src="img/Inc5000.jpg" alt="Inc 5000 Logo">
+        <img src="img/MSP 500.jpg" alt="MSP 500 Logo">
+        <img src="img/CRN 150.jpg" alt="CRN 150 Logo">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
