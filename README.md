@@ -10,9 +10,6 @@ This project provides a modern, responsive email signature design with a top-rig
 - **Social Media Integration**: Logos for LinkedIn, Facebook, and more.
 - **Custom Branding**: Replaceable company logo and links to your website or resources.
 
-## Demo
-![Screenshot](https://i.imgur.com/7x6GAE4.jpg)
-
 ## Usage
 
 1. **HTML Structure**:
